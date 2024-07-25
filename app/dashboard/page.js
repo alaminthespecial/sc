@@ -1,8 +1,8 @@
 // pages/dashboard.js
-
+"use client";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import ProtectedRoute from '../components/ProtectedRoute';
 
 export default function Dashboard() {
