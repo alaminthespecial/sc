@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import ProtectedRoute from '../components/ProtectedRoute';
+// import ProtectedRoute from '../components/ProtectedRoute';
 
 export default function Dashboard() {
   const [user, setUser] = useState(null);
@@ -37,7 +37,7 @@ export default function Dashboard() {
   };
 
   return (
-    <ProtectedRoute>
+    // <ProtectedRoute>
       <div style={styles.container}>
         <h2>Dashboard</h2>
         {user && (
@@ -50,7 +50,7 @@ export default function Dashboard() {
         )}
         <button onClick={handleLogout} style={styles.button}>Logout</button>
       </div>
-    </ProtectedRoute>
+    // </ProtectedRoute>
   );
 }
 
